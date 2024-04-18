@@ -45,13 +45,13 @@ class _drawerLayoutState extends State<DrawerLayoutWidget> {
           ListTile(
             title: const Text('Candidates'),
             onTap: () {
-              Navigator.pushNamed(context, '/create-post');
+              Navigator.pushNamed(context, '/candidates');
             },
           ),
           ListTile(
             title: const Text('Job Listings'),
             onTap: () {
-              Navigator.pushNamed(context, '/create-post');
+              Navigator.pushNamed(context, '/joblistings');
             },
           ),
         ],
