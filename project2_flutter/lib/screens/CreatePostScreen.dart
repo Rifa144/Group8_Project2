@@ -61,18 +61,15 @@ class _CreatePostScreenState extends State<CreatePostScreen> {
         ),
         ElevatedButton(
           onPressed: getImage,
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.white, backgroundColor: Colors.black,
-            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+            shape: MaterialStateProperty.all<OutlinedBorder>(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.zero,
+              ),
             ),
-            textStyle:const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-            elevation: 4,
-            shadowColor: Colors.blueGrey,
+            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+            padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0)),
           ),
           child:const Icon(Icons.add_a_photo),
         ),
@@ -98,18 +95,15 @@ class _CreatePostScreenState extends State<CreatePostScreen> {
               Navigator.pushNamed(context, '/home-page');
             }
           },
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.white, backgroundColor: Colors.black,
-            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+            shape: MaterialStateProperty.all<OutlinedBorder>(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.zero,
+              ),
             ),
-            textStyle:const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-            elevation: 4,
-            shadowColor: Colors.blueGrey,
+            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+            padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0)),
           ),
           child:const Text('Create post'),
         )
@@ -152,21 +146,18 @@ class _CreatePostScreenState extends State<CreatePostScreen> {
         ElevatedButton(
           onPressed: () {
             if (_formKey.currentState!.validate()) {
-              Navigator.pushNamed(context, '/home-page');
+              Navigator.pushNamed(context, '/job-listing');
             }
           },
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.white, backgroundColor: Colors.black,
-            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+            shape: MaterialStateProperty.all<OutlinedBorder>(
+              RoundedRectangleBorder(
+                borderRadius: BorderRadius.zero,
+              ),
             ),
-            textStyle:const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-            elevation: 4,
-            shadowColor: Colors.blueGrey,
+            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+            padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0)),
           ),
           child:const Text('Post this job'),
         )

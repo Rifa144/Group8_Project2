@@ -68,7 +68,10 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Home Screen'),
       ),
       drawer: const DrawerLayoutWidget(),
-      body: ListView.builder(
+
+      body:  Container(
+        margin:const EdgeInsets.symmetric(horizontal: 30.0),
+        child: ListView.builder(
         itemCount: postList.length,
         itemBuilder: (context, index) {
           final post = postList[index];
@@ -84,7 +87,12 @@ class HomeScreen extends StatelessWidget {
             },
             child: Card(
               elevation: 4,
-              margin: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.zero,
+                ),
+              margin: const EdgeInsets.only(bottom: 50.0 ),
+          child: Padding(
+          padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
                   Container(
@@ -152,10 +160,13 @@ class HomeScreen extends StatelessWidget {
 
                 ],
               ),
+          ),
             ),
           );
         },
       ),
+      ),
+
     );
   }
 }
