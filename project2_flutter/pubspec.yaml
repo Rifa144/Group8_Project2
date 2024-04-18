@@ -82,6 +82,12 @@ flutter:
     - Images/girl5.jpg
     - Images/girl6.jpg
     - Images/girl7.jpg
+    - Images/cisco.png
+    - Images/social.png
+    - Images/adobe.png
+    - Images/tesla.png
+    - Images/microsoft.png
+    - Images/google.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:project2_flutter/screens/DrawerLayoutWidget.dart';
 import 'candidate.dart';
 import 'detail_screen.dart';
 
@@ -169,7 +169,7 @@ class CandidateScreen extends StatelessWidget {
 
 
     return Scaffold(
-
+      drawer: const DrawerLayoutWidget(),
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
         title: Text("Candidate Screen",

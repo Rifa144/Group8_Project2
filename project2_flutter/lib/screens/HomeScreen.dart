@@ -134,18 +134,15 @@ class HomeScreen extends StatelessWidget {
                           onPressed: () {
                             Navigator.pushNamed(context, '/all-candidates');
                           },
-                          style: ElevatedButton.styleFrom(
-                            foregroundColor: Colors.white, backgroundColor: Colors.black,
-                            padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                            shape: MaterialStateProperty.all<OutlinedBorder>(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.zero,
+                              ),
                             ),
-                            textStyle:const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                            elevation: 4,
-                            shadowColor: Colors.blueGrey,
+                            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                            padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0)),
                           ),
                           child:const Text('Know More'),
                         ),
