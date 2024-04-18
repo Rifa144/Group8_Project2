@@ -167,13 +167,14 @@ class CandidateScreen extends StatelessWidget {
       ),
     ];
 
+
     return Scaffold(
+
       appBar: AppBar(
-        backgroundColor: Theme
-            .of(context)
-            .colorScheme
-            .inversePrimary,
-        title: Text("Candidate Screen"),
+        backgroundColor: Colors.deepPurple,
+        title: Text("Candidate Screen",
+        style: TextStyle(color: Colors.white),),
+
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

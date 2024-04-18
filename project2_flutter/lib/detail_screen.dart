@@ -9,9 +9,12 @@ class DetailScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Detail Screen"),
-      ),
+        appBar: AppBar(
+          backgroundColor: Colors.deepPurple,
+          title: Text("Candidate Screen",
+            style: TextStyle(color: Colors.white),),
+
+        ),
       body: Padding(
         padding: const EdgeInsets.all(30),
         child: Center(
