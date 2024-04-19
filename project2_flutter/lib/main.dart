@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         '/home-page': (context) => HomeScreen(),
         '/create-post': (context) => const CreatePostScreen(),
         '/job-listing':(context) => const JobListingsPage(),
-
+        '/candidate':(context) => const CandidateScreen(),
 
       },
     );

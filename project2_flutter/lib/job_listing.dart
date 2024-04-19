@@ -10,7 +10,10 @@ class JobListingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const DrawerLayoutWidget(), //Defined drawer for navigation
-      appBar: AppBar(title: const Text('Top Jobs Picked For you')),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+          title: const Text('Top Jobs Picked For you',
+          style: TextStyle(color: Colors.white),)),
       body: Container(
         margin: const EdgeInsets.all(16.0),
         child: ListView.builder(  //Displaying the list of jobs created in job.dart

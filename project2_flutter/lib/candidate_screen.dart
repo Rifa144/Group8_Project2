@@ -6,8 +6,9 @@ import 'candidate.dart';
 import 'detail_screen.dart';
 
 class CandidateScreen extends StatelessWidget {
-  const CandidateScreen({Key ? key, required this.candidate}) : super(key: key);
-  final Candidate candidate;
+
+
+  const CandidateScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -171,7 +172,7 @@ class CandidateScreen extends StatelessWidget {
     return Scaffold(
       drawer: const DrawerLayoutWidget(),
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blue,
         title: Text("Candidate Screen",
         style: TextStyle(color: Colors.white),),
 

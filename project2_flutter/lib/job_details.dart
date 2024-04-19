@@ -10,7 +10,10 @@ class JobDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Job Details')), //Title of details page
+      appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: const Text('Job Details',
+            style: TextStyle(color: Colors.white),)),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(16.0),

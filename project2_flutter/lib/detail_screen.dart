@@ -10,7 +10,7 @@ class DetailScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.deepPurple,
+          backgroundColor: Colors.blue,
           title: Text("Candidate Screen",
             style: TextStyle(color: Colors.white),),
 
@@ -25,8 +25,8 @@ class DetailScreen extends StatelessWidget{
                   child:
                   Image(
                     image: AssetImage("Images/" + candidate.photo),
-                    width: 400,
-                    height: 360,)
+                    width: 360,
+                    height: 300,)
               ),
               Text("${candidate.title} ${candidate.name}",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: Colors.blue),
@@ -41,7 +41,7 @@ class DetailScreen extends StatelessWidget{
                 style: TextStyle(fontSize: 18),
               ),
 
-              SizedBox(height: 16),
+              SizedBox(height: 12),
               Text("Comtact",
                 style: TextStyle(fontSize: 22, color: Colors.blue),
               ),
@@ -52,7 +52,7 @@ class DetailScreen extends StatelessWidget{
                 style: TextStyle(fontSize: 16),
               ),
 
-              SizedBox(height: 16),
+              SizedBox(height: 12),
               Text("Education",
                 style: TextStyle(fontSize: 22, color: Colors.blue),
               ),
@@ -60,19 +60,24 @@ class DetailScreen extends StatelessWidget{
                 style: TextStyle(fontSize: 16),
               ),
 
-              SizedBox(height: 16),
+              SizedBox(height: 12),
               ElevatedButton(
                   onPressed: () {
 
                   },
                   child: const Text("Connect"),
-                  style: ElevatedButton.styleFrom(
-                    textStyle: TextStyle(fontSize: 20, color: Colors.white, backgroundColor: Colors.blue),
-                    shape: BeveledRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(7)),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                  shape: MaterialStateProperty.all<OutlinedBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.zero,
                     ),
                   ),
+                  foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                  padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0)),
                 ),
+
+              ),
             ],
           ),
         ),

@@ -36,9 +36,7 @@ class _CreatePostScreenState extends State<CreatePostScreen> {
     });
   }
   void uploadImage() {
-    // Implement your image upload logic here
-    // For example, you could use HTTP requests to upload the image to a server
-    // Make sure to handle any errors and provide feedback to the user
+
   }
   Widget _buildDynamicControls() {
     switch (dropdownValue) {
@@ -168,7 +166,10 @@ class _CreatePostScreenState extends State<CreatePostScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Create Post screen'),
+        backgroundColor: Colors.blue,
+        title: const Text(
+          'Create Post screen',
+          style: TextStyle(color: Colors.white),),
       ),
       drawer: const DrawerLayoutWidget(),
       body: SingleChildScrollView(
